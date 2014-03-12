@@ -3,20 +3,13 @@
 
 int main(void) {
 
-	// Vars
-	char 	c;
-	int		x,
-			y;
-	long 	l[10];
+	int 	x = 3,
+			*p = NULL;
 
-	// Address book
-	printf("%p\n", &c);
-	printf("%p\n", &x);
-	printf("%p\n", &y);
+	p = &x;
 
-	int i;
-	for (i = 0; i < 10; i++)
-		printf("%p\n", &l[i]);
+	printf("%d %d\n", x, *p);
+	printf("%p %p\n", &x, p);
 
 	return 0;
 }
