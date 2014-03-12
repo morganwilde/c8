@@ -10,9 +10,13 @@ int main(void) {
 	long 	l[10];
 
 	// Address book
+	printf("%p\n", &c);
+	printf("%p\n", &x);
+	printf("%p\n", &y);
+
 	int i;
 	for (i = 0; i < 10; i++)
-		printf("%llu\n", &l[i]);
+		printf("%p\n", &l[i]);
 
 	return 0;
 }
